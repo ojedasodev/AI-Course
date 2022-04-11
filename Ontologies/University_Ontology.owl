@@ -1,0 +1,571 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/alberto/ontologies/2022/3/university#"
+     xml:base="http://www.semanticweb.org/alberto/ontologies/2022/3/university"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university">
+        <rdfs:comment>This is a university ontology</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#AreEnrolledBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#AreEnrolledBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#enrollsFor"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Programs"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Student"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T04:33:40Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#admits -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#admits">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#University"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Student"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T04:32:23Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#employs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#employs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#University"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Staff"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T04:41:14Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#enrollsFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#enrollsFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Programs"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T04:39:16Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#handles -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#handles">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Academic"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Programs"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T04:42:41Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#hasDept -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#hasDept">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Programs"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Deparment"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T04:43:21Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#studies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#studies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Programs"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T04:43:54Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#workAs -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#workAs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Job"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T04:44:45Z</dc:date>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#experienceInYears -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#experienceInYears">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Staff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T04:47:45Z</dc:date>
+        <rdfs:comment>indicates years of experience</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#hasCredit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#hasCredit">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T04:51:55Z</dc:date>
+        <rdfs:label>hasCredit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#hasIdNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#hasIdNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T04:52:52Z</dc:date>
+        <rdfs:comment>Used to indicate de id number of the students</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#hasSubject -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#hasSubject">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Subject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T04:53:07Z</dc:date>
+        <rdfs:comment>indicates the subject taken by the students</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#hasSubjectScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#hasSubjectScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Subject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T04:57:12Z</dc:date>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#joiningDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#joiningDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T04:58:06Z</dc:date>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Academic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Academic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Staff"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Administrative"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-10T21:19:01Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Administrative -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Administrative">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Staff"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-10T21:19:51Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Administrative_officer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Administrative_officer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Job"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:53:25Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Admissions_officer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Admissions_officer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Job"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:54:19Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Architecture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Architecture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Deparment"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:17:02Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Arquitecture-prog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Arquitecture-prog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Programs"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T04:09:05Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#AssProf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#AssProf">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Professor"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Job"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:39:43Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Basic_sciences -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Basic_sciences">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Deparment"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:16:50Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Bussiness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Bussiness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Deparment"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:16:14Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Dean -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Dean">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Job"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:54:46Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Deparment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Deparment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#University"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:14:22Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#EE-chemical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#EE-chemical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#EE-civil"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:33:20Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#EE-civil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#EE-civil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Programs"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:29:08Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#EE-mech -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#EE-mech">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#EE-chemical"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:32:33Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#EE-system_and_computing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#EE-system_and_computing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Programs"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:31:58Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Economy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Economy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Deparment"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:15:34Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Education -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Education">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Deparment"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:16:37Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#English -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#English">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Programs"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:19:57Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Enngeniering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Enngeniering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Deparment"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:15:50Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Ideeas_Institute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Ideeas_Institute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Deparment"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:16:25Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#International-Students -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#International-Students">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Student"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:02:43Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Job -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Job">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#University"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:39:30Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Language_School -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Language_School">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Deparment"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:17:18Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Law -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Law">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Deparment"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:17:10Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#PG-Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#PG-Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Student"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:01:37Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#University"/>
+        <rdfs:comment>Indicates what kind of person are in the university</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#PhdStudent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#PhdStudent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Student"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:01:54Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Professor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Professor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Job"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:53:46Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Programs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Programs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#University"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:19:34Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Social_Sciences_and_Humanities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Social_Sciences_and_Humanities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Deparment"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T03:16:00Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Person"/>
+        <rdfs:comment>Indicates Staff Working in the University</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Person"/>
+        <rdfs:comment>Indicates Students In the University</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#Subject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alberto/ontologies/2022/3/university#University"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T04:56:00Z</dc:date>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alberto/ontologies/2022/3/university#University -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alberto/ontologies/2022/3/university#University">
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alberto</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-11T02:58:12Z</dc:date>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
