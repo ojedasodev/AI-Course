@@ -1,0 +1,38 @@
+high levesls of serum insuline does not mean diabetes.
+
+Hyperinsulinemia: Some individuals require higher than normal amounts of 
+insulin to maintain their blood sugar levels. 
+This condition is called hyperinsulinemia. 
+It is often found to co-exist with insulin resistance.
+
+Insulin resistance is a state in which a given 
+insulin concentration does not cause an expected dip in blood sugar levels.
+
+The normal values of insulin 2 hours after glucose administration 16-166 mIU/L
+
+glucose_concentration
+Two hours after drinking the glucose solution, a normal blood 
+glucose level is lower than 155 mg/dL (8.6 mmol/L).
+
+skin-thichness,  A value used to estimate body fat.
+Normal thickness in males is 12 mm; in females, 23 mm.
+
+diastolic blood preasure.
+normal values.
+systolic: less than 120 mm Hg
+diastolic: less than 80 mm Hg
+What causes high blood pressure?
+High blood pressure usually develops over time.
+It can happen because of unhealthy lifestyle choices, 
+such as not getting enough regular physical activity.
+Certain health conditions, such as diabetes and having obesity, 
+can also increase the risk for developing high blood pressure. 
+High blood pressure can also happen during pregnancy.
+
+body mass index
+Body mass index, or BMI,
+is a way to help you figure out if you are at a healthy weight for your height.
+Underweight: BMI is less than 18.5
+Normal weight: BMI is 18.5 to 24.9
+Overweight: BMI is 25 to 29.9
+Obese: BMI is 30 or more
